@@ -10,4 +10,9 @@ class UserController extends Controller
         return 'UserID' . $id;
     }
 
+    public function saluda(){
+       // return view('users',['name' => 'Felipe']);
+      return view('users')->with('name','Juan');
+    }
+
 }
