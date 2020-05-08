@@ -21,4 +21,4 @@ Route::get('/', function () {
 Route::get('user/{id}', 'UserController@show');
 
 
-Route::get('/', 'UserController@saluda');
+Route::get('users/{name}', 'UserController@show');
